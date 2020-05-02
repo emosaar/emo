@@ -14,7 +14,9 @@
         $('.f').eq(x).delay(500).fadeIn();
         $('.f').eq(x).find('.t').each(
             function () {
-                $(this).delay(time * 400).fadeIn();
+                setTimeout(() => {
+                    $(this).fadeIn();
+                }, time * 400);
                 time++;
             }
         )
@@ -23,8 +25,4 @@
 })();
 
 
-
-// setTimeout(() => {
-//     $(this).fadeIn();
-// }, time * 400);
-// time++;
+// $(this).delay(time * 400).fadeIn();

@@ -1,0 +1,260 @@
+/*預設值*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 微軟正黑體;
+}
+body{
+    padding-top: 9vh;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+div{
+    box-sizing: border-box;
+}
+
+
+/*標題*/
+.nav{
+    position: fixed;
+    text-align: center;
+    top:0;
+    width: 100vw;
+    height: 9vh;
+    border-bottom: 2px solid rgba(200, 200, 200, .7);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, 1);
+    z-index: 1;
+}
+.nav img{
+    width: auto;
+    height: 9vh;
+}
+
+/*各層樓*/
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.f{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+/*第一層*/
+.f1 img{
+    height: 100%;
+}
+
+.f1img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 350px;
+    height: 280px;
+    display: none;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+    animation: 2s jump infinite;
+    background: url(img/lala/nose.png);
+    background-size: cover;
+}
+@keyframes jump{
+    50%{bottom: 20px;}
+}
+
+.f1img:hover{
+    background: url(img/lala/f1_gif.gif);
+    background-size: cover;
+    border-radius: 0;
+}
+
+/*第二層*/
+.f2{
+    justify-content: center;
+}
+
+.f2img img{
+    width: 28vw;
+    height: 100vh;
+}
+
+.f2img{
+    width: 25vw;
+    height: 100vh;
+    transition: .5s;
+    cursor: pointer;
+}
+
+/*第三層*/
+.f3{
+    margin-left: 0vw;
+}
+@keyframes f3in{
+    0%{margin-left: 100vw;}
+    100%{margin-left:0vw;}
+}
+.f3img{
+    position: absolute;
+    top: 9vh;
+    bottom: 0;
+    margin: auto 10px auto 15px;
+    width: 850px;
+    height: 540px;
+}
+
+.translation{
+    position: absolute;
+    top: 9vh;
+    bottom: 0;
+    margin: auto 20px auto 870px;
+    width: 450px;
+    height: 530px;
+    transition: .5s;
+}
+
+.cca{
+    transform: rotateY(360deg);
+}
+
+.p2{
+    display: none;
+}
+
+.tg{
+    width: 0;
+    height: 0;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    cursor: pointer;
+}
+
+.goleft{
+    border-right: 15px solid;
+    left: 0px;
+    display: none;
+    animation: 1s gl infinite;
+}
+@keyframes gl{
+    0%{left: 0px;}
+    50%{left: 5px;}
+    100%{left: 0px;}
+}
+.goright{
+    border-left: 15px solid;
+    right: 0px;
+    animation: 1s gr infinite;
+}
+@keyframes gr{
+    0%{right: 0px;}
+    50%{right: 5px;}
+    100%{right: 0px;}
+}
+
+
+.f3gif{
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    bottom: 0;
+    left: -200px;
+}
+.gif{
+    position: absolute;
+    bottom: 0;
+    right:300px;
+    cursor: pointer;
+}
+.cute{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(254,251,228, 1);
+    display: none;
+}
+.cute img{
+    position: absolute;
+    top: 9vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+}
+
+
+/*gotop效果*/
+.gotop{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    transition: .5s;
+    display: none;
+    cursor: pointer;
+}
+
+.gotop:hover{
+    width: 90px;
+    height: 90px;
+}
+
+
+
+.test{
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    margin: -100px auto;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    margin: auto 5px;
+    animation: 1s load infinite;
+}
+
+@keyframes load{
+    0%{margin-bottom:10px; }
+    50%{margin-bottom: 0px;}
+    100%{margin-bottom:10px;}
+}
+.loadinggif{
+    width: 1000px;
+    height: 500px;
+    margin-left: 60px;
+}

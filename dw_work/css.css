@@ -1,0 +1,262 @@
+/* all */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 微軟正黑體;
+}
+body{
+    padding-top: 9vh;
+    overflow-x: hidden;
+}
+div{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.nav{
+    position: fixed;
+    text-align: center;
+    top:0;
+    width: 100vw;
+    height: 9vh;
+    border-bottom: 2px solid rgba(200, 200, 200, .7);
+    box-shadow: 0 5px 3px rgba(0, 0, 0, .5);
+    background: rgba(255, 255, 255, 1);
+    z-index: 1;
+}
+.nav img{
+    width: auto;
+    height: 9vh;
+}
+.center{
+    width: 100vw;
+    margin: auto;
+}
+
+/* index.html */
+
+.cib{
+    margin: auto;
+    height: 90vh;
+}
+.cib img{
+    height: 100%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+.fs{
+    position: fixed;
+    width: 300px;
+    height: 200px;
+    bottom: 15vh;
+    right: 3vw;
+    animation: 2s jump infinite;
+}
+@keyframes jump{	/*變化圖片*/
+	50%{bottom: 20vh;}
+}
+.fs:hover{
+    animation: .2s shake infinite;
+}
+@keyframes shake{	/*變化圖片*/
+     50%{right: 3.5vw;}
+}
+.sib{
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-image: url(img/pic/clickooo.png);
+    transition: .3s;
+    cursor: pointer;
+}
+.fs:hover .sib{
+    width: 200px;
+    height: 200px;
+    background-image: url(img/pic/ooo.png);
+}
+
+/*character.html*/
+
+.tt{
+    width: 80%;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.cc{
+    display: flex;
+    perspective: 300px;
+    transition: .5s;
+ }
+ .cca{
+    transform: rotateY(360deg);
+ }
+
+ .Character{
+     width: 550px;
+     margin: auto;
+ }
+ .introduction{
+    width: 340px;
+}
+
+.list{
+    padding: 10px;
+    margin: auto 100px;
+    border: 2px solid rgba(200, 200, 200, .7);
+    box-shadow: -3px 5px 3px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+}
+
+.ll{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.la{
+    width: 100%;
+    transition: .2s;
+}
+.ll:hover .la{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    right: 70px;
+    animation: 2s ho infinite;
+}
+@keyframes ho{
+    100%{transform: rotate(360deg);}
+}
+
+
+.t{
+    width: 35%;
+    position: relative;
+    margin: auto;
+}
+.item{
+    padding: 5px;
+    text-align: center;
+    width: 300px;
+    transition: .5s;
+    height: 600px;
+}
+.item:hover{
+    width: 350px;
+}
+.item:hover img{
+    width: 350px;
+    height: 350px;
+}
+.item img{
+    width: 300px;
+    height: 300px;
+    transition: .5s;
+}
+
+.item p{
+    margin-top: 10px;
+}
+
+.pic{
+    position: relative;
+    margin: auto;
+    width: 800px;
+    background-size: cover;
+    height: 450px;
+    background: url(img/pic/back2.png);
+    cursor: pointer;
+}
+.pic2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 450px;
+    background-image: url(img/pic/back3.png);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    transition: 1s;
+}
+.pic:hover .pic2{
+    clip-path: polygon(100% 100%, 0 100%, 100% 100%, 100% 0);
+}
+.pic3{
+    display: none;
+    margin: auto;
+    background: url(img/pic/back4.jpg);
+    background-size: cover;
+    width: 800px;
+    height: 800px;
+}
+.pic4{
+    position: fixed;
+    bottom: -30px;
+    background: url(img/pic/qq.png);
+    width: 300px;
+    height: 170px;
+    background-size: cover;
+    right: 45%;
+}
+.yoyo{
+    position: fixed;
+    background: url(img/pic/high.png);
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    animation: 10s ya infinite;
+    z-index: -1;
+}
+@keyframes ya{
+    0%{top: 0%;right: 150px;}
+    20%{top: 20%;right: 300px;}
+    40%{top: 40%;right: 150px;}
+    60%{top: 60%;right: 300px;}
+    80%{top: 80%;right: 150px;}
+    100%{top:100%;right: 300px;}
+}
+.yoyo:hover{
+    width: 150px;
+    height: 150px;
+}
+
+.footer{
+    padding:0 30px;
+    display: flex;
+    justify-content:center;
+    width: 100vw;
+    height: 70px;
+    background: rgba(200, 200, 255, .5);
+}
+
+.fimg{
+    width: 50px;
+    height: 50px;
+}
+.fa a{
+    padding: 10px;
+    display: flex;
+    color: rgba(50, 50, 255, 1);
+}
+.fa p{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: auto 0; 
+}
+.fa:hover{
+    background: rgba(100, 100, 200, 1);
+}
+.fa:hover a{
+color: rgba(255, 255, 255, 1);
+}
