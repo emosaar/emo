@@ -1,5 +1,6 @@
-body{
+*{
     overflow-y: hidden;
+    text-decoration: none;
 }
 div,h1{
     display: none;
@@ -71,12 +72,12 @@ body{
 .item{
     margin: 30px auto;
     padding: 3px;
-    width: 400px;
+    width: 600px;
     height: 130px;
     border-radius: 5px;
     background: #a0a0a0;
     position: relative;
-    display: block;
+    display: flex;
 }
 
 .item::after{
@@ -92,14 +93,21 @@ body{
     border-color: transparent transparent transparent #cccccc;
 }
 
-img{
-    width: 350px;
+.item img,.tt{
+    width: 300px;
     height: 130px;
+}
+.tt{
+    width: 250px;
+    display: block;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+.tt h1{
+    display: block;
 }
 
 .item_photo{
-    padding: 3px;
-    width: 600px;
     height: 350px;
 }
 
@@ -107,6 +115,7 @@ img{
 width: 550px;
 height: 350px;
 }
+
 .item_ig{
     width: 600px;
 }
