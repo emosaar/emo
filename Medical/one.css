@@ -1,0 +1,47 @@
+.start{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 1000px;
+    height: 500px;
+    padding: 50px;
+    border: 5px solid rgba(100, 100, 200, .5);
+    border-left: none;
+    border-right: none;
+}
+.start h1{
+    display: none;
+    width: 100%;
+    font-size: 70px;
+    color: rgba(100, 100, 200, 1);
+}
+.go{
+    font-size: 100px;
+    height: 150px;
+    line-height: 130px;
+    box-shadow: 10px 10px 1px rgba(100, 100, 200, .3);
+}
+
+.out{
+    display: none;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+}
+path{
+   color: rgba(100, 100, 200, .3);
+}
+
+.tt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(100, 100, 200, .5);
+    width: 1900px;
+    height: 930px;
+}

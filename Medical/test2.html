@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <style>
+        .center {
+            /*最大DIV*/
+            width: 100%;
+            height: 300px;
+        }
+
+        .box {
+            /*置中DIV*/
+            position: relative;
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .main_img {
+            /*圖片*/
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            z-index: -1;
+        }
+
+        .box_text {
+            /*文字*/
+            font-size: 50px;
+            font-weight: bold;
+            color: rgba(255, 100, 0, 1);
+        }
+
+        .l_text {
+            margin-left: 200px;
+            background: rgba(255, 100, 0, .5);
+        }
+
+        .r_text {
+            margin-left: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <div class="center">
+        <div class="box">
+            <div class="box_text l_text">你好</div>
+            <img class="main_img" src="3.png" alt="">
+            <div class="box_text r_text">企鵝</div>
+        </div>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script></script>
+</body>
+
+</html>

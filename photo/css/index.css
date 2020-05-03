@@ -1,0 +1,32 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    width: 100%;
+    height: 110vh;
+    position: relative;
+}
+
+.full_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.full_item{
+    width: 60%;
+    height: 50%;
+    text-align: center;
+}
+.full_item  h1{
+    font-size: 150px;
+}
+.full_item  p{
+    margin-top: 20px;
+    font-size: 35px;
+}

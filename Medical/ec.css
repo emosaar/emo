@@ -1,0 +1,74 @@
+.center{
+    margin: auto;
+}
+.row{
+    width: 95%;
+    margin: 30px auto;
+    height: 200px;
+    padding: 30px;
+    display: flex;
+    border-right: 5px solid;
+    border-bottom: 2px solid rgba(200, 200, 200, .5);
+}
+.title{ /*標題*/
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 150px;
+    font-weight: bold;
+    border-right: 5px solid;
+}
+text{   /*標題 文字*/
+    margin: auto;
+    font-size: 100px;
+}
+.title_svg{ /*標題 圖案*/
+    width: 80px;
+}
+
+.set-button{  /*按鈕*/
+    position: relative;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+}
+.item{
+    margin: 0px;
+    margin-left:300px ;
+    width: 300px;
+    height: 150px;
+    border: none;
+}
+.svg-off{
+    display: none;
+}
+
+.item_hover_r{  /* hover 背景 紅*/
+    background:-webkit-linear-gradient(left,rgba(255,255,255,1),rgba(250,100,100,.2),rgba(250,100,100,.2));
+}
+.item_hover_g{  /* hover 背景 綠*/
+    background:-webkit-linear-gradient(left,rgba(255,255,255,1),rgba(100,200,100,.2),rgba(100,200,100,.2));
+}
+.item_hover_b{  /* hover 背景 藍*/
+    background:-webkit-linear-gradient(left,rgba(255,255,255,1),rgba(100,100,250,.2),rgba(100,100,250,.2));
+}
+.item_hover_k{  /* hover 背景 藍*/
+    background:-webkit-linear-gradient(left,rgba(255,255,255,1),rgba(0,0,0,.2),rgba(0,0,0,.2));
+}
+
+.out{
+    width:150px;
+    height: 150px;
+}
+path{
+   color: rgba(0, 0, 0, .3);
+}
+
+.tt{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(100, 100, 200, .5);
+    width: 1030px;
+    height: 880px;
+}

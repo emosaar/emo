@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="preset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="index.css"
+    >
+</head>
+
+<body>
+    <div class="center">
+        <div class="row">
+            <div class="item color_r">
+                <h1>床位控制</h1>
+                <h2>控制病床高低位</h2>
+                <div class="img img_a"></div>
+                <div class="item_hover_out">
+                    <a href="hb.html">
+                        <div class="go color_r go_bk_r">
+                            <div class="go_bk bk_r"></div>
+                            GO
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item color_o">
+                <h1>環境控制</h1>
+                <h2>控制病房環境設備</h2>
+                <div class="img img_b"></div>
+                <div class="item_hover_out">
+                    <a href="ec.html">
+                        <div class="go color_o go_bk_o">
+                            <div class="go_bk bk_o"></div>
+                            GO
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="item color_g">
+                <h1>檢查狀況</h1>
+                <h2>身體狀況檢查</h2>
+                <div class="img img_c"></div>
+                <div class="item_hover_out">
+                    <a href="one.html">
+                        <div class="go color_g go_bk_g">
+                            <div class="go_bk bk_g"></div>
+                            GO
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item color_b">
+                <h1>醫護人員</h1>
+                <h2>快速呼叫醫護人員</h2>
+                <div class="img img_d"></div>
+                <div class="item_hover_out">
+                    <div class="go color_b go_bk_b">
+                        <div class="go_bk bk_b"></div>
+                        GO
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $('.center').fadeIn(2000);
+
+        $('.go').hover(function () {
+            // over
+            $(this).css({ 'color': 'rgba(255,255,255,1)' });
+            $(this).find('.go_bk').fadeIn();
+        }, function () {
+            // out
+            $(this).css({ 'color': '' });
+            $(this).find('.go_bk').fadeOut(300);
+        }
+        );
+    </script>
+</body>
+
+</html>
