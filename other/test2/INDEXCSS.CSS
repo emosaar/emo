@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:"微軟正黑體";
+	margin:0;
+	list-style:none;
+	text-decoration:none;
+	padding:0;
+	}
+a{
+	color:rgba(255,255,255,1);
+	}
+a:link{
+	color:rgba(255,255,255,1);
+	}
+body{
+	background-size:cover;
+	}
+li{
+	margin:3px 0;
+	font-size:10px;
+	color: rgba(100,100,100,1);
+	}
+p{
+	width:90%;
+	margin:10px 10px 30px 80px;;
+	}
+.text{/*textbox*/
+	padding:1px 15px 2px 20px;
+	border:1px solid rgba(34,36,38,.15);
+	border-radius:10px;
+	color:rgba(70,0,0,.8);
+	}
+.text:hover{
+	border:1px solid rgba(34,36,38,.25);
+	}
+.button{
+	color:rgba(255,255,255,1);
+	border:1px solid rgba(34,36,38,.15);
+	background:rgba(255,255,255,.5);
+	padding:2px;
+	}
+.button:hover{
+	background:rgba(221,221,221,.4);
+	}
+.buttondiv{
+	float:right;
+	padding:0 10% 0 0;
+	}
+.top{
+	z-index:3;
+	position:fixed;
+	color:rgba(255,255,255,1);
+	padding:10px;
+	width:99%;
+	height:50px;
+	background:rgba(0,0,0,.6);
+	}
+.user{
+	float:right;
+	width:200px;
+	height:50px;
+	}
+.img{
+	border-radius:50px;
+	width:50px;
+	height:50px;
+	float:left;
+	}
+.img2{
+	border-radius:50px;
+	width:60px;
+	height:60px;
+	float:left;
+	border:2px rgba(34,36,38,.15) solid;
+	}
+.img3{
+	border:1px solid rgba(34,36,38,.15);
+	width:800px;
+	height:400px;
+	}
+.right{
+	border:rgba(255,255,255,1) 1px groove;
+	color:rgba(255,255,255,1);
+	width:100px;
+	height:200px;
+	background:rgba(0,0,0,.6);
+	border-radius:10px;
+	position:fixed;
+	right:20px;
+	top:20%;
+	padding:10px;
+	}
+.main{
+	width:80%;
+	height:800px;
+	position:absolute;
+	top:15%;
+	left:3%;
+	color:rgba(255,255,255,1);
+}
+.imgs{
+	background:rgba(0,0,0,.6);
+	width:90%;
+	}
+
+#login{
+	color:rgba(255,255,255,1);
+	background:rgba(200,100,100,1);
+	margin:10% auto;
+	padding:3%;
+	border:2px solid rgba(34,36,38,.15);
+	height:150px;
+	width:200px;
+	}
+#us{
+	vertical-align:top;
+	margin:0 0 0 10px;
+	font-size:18px;
+	}
+#out{
+	margin:0 0 0 30px;
+	color:rgba(200,200,200,1);
+	vertical-align:top;
+	font-size:10px;
+	}
+#out:hover{
+	color:rgba(255,255,255,1);
+	}
+#bottom{
+	margin:10px;
+	font-size:13px;
+	vertical-align:bottom;
+	color:rgba(200,200,200,1);
+	}
+#bottom:hover{
+	color:rgba(255,255,255,1);
+	}
+#search{
+	position:absolute;
+	left:25%;
+	width:40%;
+	}
+#sea{
+	margin:10px;
+	background: rgba(221,221,221,1) url('search.gif') no-repeat 99% 5px;
+	border:1px rgba(40,40,40,.25) solid;
+	border-radius:10px;
+	padding:3px;
+	width:100%;
+	}
+#name{
+	font-size:40px;
+	}

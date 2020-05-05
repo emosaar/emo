@@ -21,35 +21,17 @@
 <body>
 
     <main>
-        <section>
-
-            <a href="test1/one.html">
+        <section v-for="i,index in menu">
+            <a :href="'test' + [index+1] + '/index.html'">
                 <div class="item">
                     <div class="img">
-                        <img
-                            src="img/00.png"
-                            alt=""
-                        >
+                        <img :src="'img/0'+ [index] + '.png'">
                     </div>
                     <div class="text">
                         <h1>
-
+                            {{i.h1}}
                         </h1>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <div class="item">
-                    <div class="img">
-                        <img
-                            src="img/00.png"
-                            alt=""
-                        >
-                    </div>
-                    <div class="text">
-                        <h1>
-
-                        </h1>
+                        {{i.text}} 練習
                     </div>
                 </div>
             </a>
@@ -57,6 +39,7 @@
     </main>
 
     <script src="jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js"></script>
 </body>
 

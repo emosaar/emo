@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://172.16.4.67:2019/share/clip-path-hover-effect-prac.html -->
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: rgba(50, 50, 50, 1);
+			display: flex;
+			height: 100vh;
+			/* justify-content: center;
+			align-items: center; */
+		}
+
+		.wrap {
+			width: 1200px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			color: rgba(255, 255, 255, 1);
+			width: 250px;
+			height: 300px;
+			background: rgba(0, 0, 0, 1);
+			padding: 20px;
+			box-sizing: border-box;
+			margin: 10px auto;
+			text-align: center;
+			position: relative;
+			transition: .3s;
+			cursor: pointer;
+		}
+
+		.item h3 {
+			text-transform: uppercase;
+		}
+
+		.item a {
+			position: absolute;
+			left: 50px;
+			right: 50px;
+			bottom: 30px;
+			padding: 10px 20px;
+			border: 2px solid rgba(255, 255, 255, 1);
+			color: rgba(255, 255, 255, 1);
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: .3s;
+
+		}
+
+		.item:hover {
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+		}
+
+		.item a:hover {
+			background: rgba(255, 255, 255, 1);
+			color: rgba(0, 0, 0, 1);
+		}
+
+		.clippath {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			/* background: rgba(0, 170, 250, .5); */
+			top: 0;
+			left: 0;
+			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+			transition: .5s;
+		}
+
+		.item:hover .clippath {
+			clip-path: polygon(100% 100%, 0 100%, 100% 100%, 100% 0);
+		}
+
+		.item:nth-child(1) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=1');
+			background-size: cover;
+		}
+
+		.item:nth-child(2) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=2');
+			background-size: cover;
+		}
+
+		.item:nth-child(3) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=3');
+			background-size: cover;
+		}
+
+		.item:nth-child(4) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=4');
+			background-size: cover;
+		}
+
+		.item:nth-child(5) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=5');
+			background-size: cover;
+		}
+
+		.item:nth-child(6) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=6');
+			background-size: cover;
+		}
+
+		.item:nth-child(7) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=7');
+			background-size: cover;
+		}
+
+		.item:nth-child(8) .clippath {
+			background-image: url('https://picsum.photos/250/300/?random=8');
+			background-size: cover;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="item">
+			<div class="contentBox">
+				<h3>item01</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae numquam iste in culpa. Nam
+					reprehenderit esse saepe molestias dolorem quaerat.</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item02</h3>
+				<p>Accusantium, assumenda consectetur at est adipisci, architecto animi tempora similique odio explicabo
+					minima necessitatibus facilis vero! Assumenda ab, esse sequi!</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item03</h3>
+				<p>Praesentium voluptates, hic necessitatibus in fugiat odit explicabo veniam minus ipsam atque voluptas
+					reiciendis nostrum numquam unde! Libero, ex, repellendus?</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item04</h3>
+				<p>Quos ex laboriosam, cupiditate doloremque soluta quisquam iste porro sit omnis natus sunt laborum
+					saepe, vitae voluptas ipsam commodi reiciendis.</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item05</h3>
+				<p>Maiores tempora, tenetur blanditiis. Iusto dolorum facere, nisi in minima esse, maiores natus vitae
+					soluta voluptas. Vero ipsam debitis voluptates.</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item06</h3>
+				<p>Dolor incidunt quidem, aut eos officia dicta, dolore obcaecati quia ipsa! Quidem officiis excepturi
+					eius ipsa unde, sapiente ea, magni!</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item07</h3>
+				<p>Repellendus eligendi libero laboriosam sit laborum delectus illo. Cumque, repudiandae vitae,
+					excepturi molestias optio facilis qui voluptatem inventore corrupti suscipit!</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+		<div class="item">
+			<div class="contentBox">
+				<h3>item08</h3>
+				<p>Impedit quae cumque iure, reprehenderit blanditiis, possimus ipsam provident temporibus ipsa autem!
+					Ducimus accusantium reprehenderit suscipit, sed aut adipisci non!</p>
+				<a href="">read more</a>
+			</div>
+			<div class="clippath"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
